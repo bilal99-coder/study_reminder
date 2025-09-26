@@ -36,7 +36,7 @@ class StudentsManager:
             json.dump(self.students, file, indent=4)
     
     def get_students(self):
-        """Retrieve the list of students."""ß
+        """Retrieve the list of students."""
         return self.students
     
     def list_students(self):
