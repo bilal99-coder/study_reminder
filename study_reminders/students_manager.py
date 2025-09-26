@@ -24,3 +24,22 @@ class StudentsManager:
         }
         self. students. append (student)
         self. save_students
+
+    def remove_student(self, name):
+        """Remove a student by name and update the JSON file."""
+        self.students = [s for s in self.students if s['name'] != name]
+        self.save_students()
+
+    def save_students(self):
+        """Save student data to the JSON file."""
+        with open(self.file_path, "w") as file:
+            json.dump(self.students, file, indent=4)
+    
+    def get_students(self):
+        """Retrieve the list of students."""ß
+        return self.students
+    
+    def list_students(self):
+        """Print all students."""
+        for student in self.students:
+            print(f"Name: {student['name']}, Email: {student['email']}, Course: {student['course']}, Preferred Time: {student['preferred_time']}")
