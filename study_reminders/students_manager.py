@@ -2,7 +2,7 @@
 import json
 class StudentsManager:
     """Class to manage student data with JSON storage."""
-    def __init__(self, file_path="students json") :
+    def __init__(self, file_path="students.json") :
         self.file_path = file_path
         self.students = self.load_students
 
@@ -10,9 +10,11 @@ class StudentsManager:
         """Load student data from a JSON file.""" 
         try:
             with open(self.file_path, "r") as file:
-                return json.load (file)
+                return json.load(file)
         except FileNotFoundError:
-            return {"name": "Alice", "email": "alice@example.com", "course": "Computer Science", "preferred_time": "08:00 AM"}, {"name": "Bob", "email": "bob@example.com", "course": "Mathematics", "preferred_time": "09:00 AM"}, {"name": "Charlie", "email": "charlie@example.com" , "course": "Physics","preferred_time": "07:30 AM"}
+            return [{"name": "Alice", "email": "alice@example.com", "course": "Computer Science", "preferred_time": "08:00 AM"},
+                    {"name": "Bob", "email": "bob@example.com", "course": "Mathematics", "preferred_time": "09:00 AM"},
+                    {"name": "Charlie", "email": "charlie@example.com" , "course": "Physics","preferred_time": "07:30 AM"}]
     
     def add_student (self, name, email, course, preferred_time="08:00 AM") :
         """Add a student and save to the JSON file."""
