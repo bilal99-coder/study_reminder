@@ -1,10 +1,14 @@
 [
     {
-        "name": "",
-        "course": ""
+        "name": "name1",
+        "course": "course1",
+        "preferred_time" : "13:42:30",
+        "email": "email1"
     },
     {
-        "name": "",
-        "course": ""
+        "name": "name2",
+        "course": "course2",
+        "preferred_time" : "13:42",
+        "email": "email2"
     }
 ]

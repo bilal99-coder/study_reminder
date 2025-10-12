@@ -11,4 +11,4 @@ challenges:
 - use pkgutil.get_data() instead of direct file openeing wit open() to avoid file paths problems ensuring full compatibility
 - the naming convention in python seems to be a_b
 - import sysconfig; print(sysconfig.get_paths()["purelib"])'
-- although i imported the pythoin library schedule i had to restart my visual studio code ide multiple times before it came up. 
+- although i imported the pythoin library schedule i had to restart my visual studio code ide multiple times before it came up. but i still could not use it becuase i was using the system python not the virtal envirniment python
