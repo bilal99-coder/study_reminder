@@ -9,3 +9,5 @@ def log_reminder(student, reminder):
 
 def log_scheduler_started():
     print(datetime.datetime.now(), "- Checking for new events...")
+    with open("reminder_log.txt","a") as log_file:
+        log_file.write(f"{datetime.datetime.now()} - Checking for new events...\n")

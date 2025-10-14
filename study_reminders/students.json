@@ -8,13 +8,13 @@
     {
         "name": "name2",
         "course": "course2",
-        "preferred_time" : "12:37:30",
+        "preferred_time" : "12:43:30",
         "email": "email2"
     },
     {
         "name": "name3",
         "course": "course3",
-        "preferred_time" : "12:37",
+        "preferred_time" : "12:42",
         "email": "email3"
     }
 ]
