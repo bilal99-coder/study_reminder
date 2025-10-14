@@ -8,10 +8,13 @@ def schedule_reminders(students_manager, reminder_generator, reminder_sender, lo
     print("##### Started The Student Reminder App #####")
     
     for student in students_manager.get_students():
+        print(len(students_manager.get_students()))
+        print(students_manager.get_students()[0])
+        print("tudent.")
         reminder = reminder_generator(student['name'], student['course'])
-        schedule.every().day.at(student['preferred_time']).do(lambda s=student, r=reminder: (reminder_sender(s['email'], r), logger(s, r)))
+        schedule.every().day.at(student['preferred_time']).do(lambda s=student, r=reminder: (reminder_sender(s['email'], r), logger.log_reminder(s, r)))
 
     while True:
-        print(datetime.datetime.now(), "- Checking for new events...")
         schedule.run_pending()
+        logger.log_scheduler_started()
         time.sleep(30) # Check every minute        

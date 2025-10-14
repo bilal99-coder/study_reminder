@@ -5,4 +5,4 @@ import reminder_generator
 import reminder_sender
 import logger
 
-scheduler.schedule_reminders(StudentsManager(), reminder_generator.generate_reminder, reminder_sender.send_reminder, logger.log_reminder)
+scheduler.schedule_reminders(StudentsManager(), reminder_generator.generate_reminder, reminder_sender.send_reminder, logger)

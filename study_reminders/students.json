@@ -2,19 +2,19 @@
     {
         "name": "name1",
         "course": "course1",
-        "preferred_time" : "11:44:30",
+        "preferred_time" : "12:18:00",
         "email": "email1"
     },
     {
         "name": "name2",
         "course": "course2",
-        "preferred_time" : "11:42",
+        "preferred_time" : "12:22:00",
         "email": "email2"
     },
     {
         "name": "name3",
         "course": "course3",
-        "preferred_time" : "11:43",
+        "preferred_time" : "12:19:00",
         "email": "email3"
     }
 ]
