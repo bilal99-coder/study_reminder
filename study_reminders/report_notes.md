@@ -12,3 +12,4 @@ challenges:
 - the naming convention in python seems to be a_b
 - import sysconfig; print(sysconfig.get_paths()["purelib"])'
 - although i imported the pythoin library schedule i had to restart my visual studio code ide multiple times before it came up. but i still could not use it becuase i was using the system python not the virtal envirniment python
+- one of the biggest challenges was to figure out which environment i was using in a given time. This need to know the env i am using araises especially when you try to import a new module from pip.
