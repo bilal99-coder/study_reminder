@@ -1,5 +1,5 @@
 # setup.py
-from distutils.core import setup
+from setuptools import setup
 import study_reminders
 
 setup(name='study_reminders',
