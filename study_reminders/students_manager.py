@@ -9,8 +9,6 @@ class StudentsManager:
         self.file_path = os_path + file_path
         self.students = self.load_students()
 
-
-
     def load_students (self):        
         """Load student data from a JSON file.""" 
         try:
